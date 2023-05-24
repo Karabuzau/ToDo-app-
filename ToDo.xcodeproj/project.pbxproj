@@ -26,6 +26,7 @@
 		D803B63E2A06D12800D17D11 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803B63D2A06D12800D17D11 /* HeaderView.swift */; };
 		D803B6402A06DCE500D17D11 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803B63F2A06DCE500D17D11 /* TLButton.swift */; };
 		D803B6422A06F1C900D17D11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D803B6412A06F1C900D17D11 /* Extensions.swift */; };
+		D87FA7642A13977E000640EA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87FA7632A13977E000640EA /* Launch Screen.storyboard */; };
 		D8CB38E42A022E9C00B279B0 /* ToDoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB38E32A022E9C00B279B0 /* ToDoApp.swift */; };
 		D8CB38E62A022E9C00B279B0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CB38E52A022E9C00B279B0 /* MainView.swift */; };
 		D8CB38E82A022E9E00B279B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8CB38E72A022E9E00B279B0 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		D803B63D2A06D12800D17D11 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D803B63F2A06DCE500D17D11 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		D803B6412A06F1C900D17D11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D87FA7632A13977E000640EA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D8CB38E02A022E9C00B279B0 /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CB38E32A022E9C00B279B0 /* ToDoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoApp.swift; sourceTree = "<group>"; };
 		D8CB38E52A022E9C00B279B0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -97,11 +99,11 @@
 			children = (
 				D803B62F2A06B67900D17D11 /* MainViewViewModel.swift */,
 				D803B6312A06B69100D17D11 /* ProfileViewViewModel.swift */,
+				D803B63B2A06B6FD00D17D11 /* ToDoListItemsViewViewModel.swift */,
 				D803B6352A06B6BA00D17D11 /* NewItemViewViewModel.swift */,
 				D803B6372A06B6CB00D17D11 /* LoggingVewVewModel.swift */,
 				D803B6392A06B6E800D17D11 /* RegisterViewViewModel.swift */,
 				D803B6332A06B6A700D17D11 /* ToDoListViewViewModel.swift */,
-				D803B63B2A06B6FD00D17D11 /* ToDoListItemsViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 				D8CB38E32A022E9C00B279B0 /* ToDoApp.swift */,
 				D803B6182A0381CC00D17D11 /* GoogleService-Info.plist */,
 				D803B6412A06F1C900D17D11 /* Extensions.swift */,
+				D87FA7632A13977E000640EA /* Launch Screen.storyboard */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				D8CB38EB2A022E9E00B279B0 /* Preview Assets.xcassets in Resources */,
 				D8CB38E82A022E9E00B279B0 /* Assets.xcassets in Resources */,
+				D87FA7642A13977E000640EA /* Launch Screen.storyboard in Resources */,
 				D803B6192A0381CC00D17D11 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,12 +393,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = N6W7BGR66Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,12 +423,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo/Preview Content\"";
+				DEVELOPMENT_TEAM = N6W7BGR66Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "To Do List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

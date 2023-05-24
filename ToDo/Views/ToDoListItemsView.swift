@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ToDoListItemsView: View {
-    @StateObject var viewModel = ProfileViewViewModel()
+    @StateObject var viewModel = ToDoListItemsViewViewModel()
     let item:ToDoListItem
     
     var body: some View {
@@ -20,11 +20,11 @@ struct ToDoListItemsView: View {
                     .font(.footnote)
                     .foregroundColor(Color(.secondaryLabel))
             }
+            
             Spacer()
+            
             Button{
                 viewModel.toggleIsDone(item: item)
-                
-                
             } label: {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
             }

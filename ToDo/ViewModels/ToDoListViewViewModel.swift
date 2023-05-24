@@ -28,6 +28,5 @@ class ToDoListViewViewModel: ObservableObject {
             .collection("todos")
             .document(id)
             .delete()
-        
     }
 }
